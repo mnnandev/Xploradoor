@@ -2,6 +2,7 @@
     padding-top: 100px;
     position: relative;
     z-index: 1;
+    background-color: #282a38;
 }
 .single-footer-widget {
     margin-bottom: 30px;
@@ -9,6 +10,7 @@
     h3 {
         font-size: 20px;
         margin-bottom: 25px;
+        color: white;
     }
     .link-list {
         padding-left: 0;
@@ -18,18 +20,18 @@
         li {
             font-weight: 500;
             margin-bottom: 12px;
-            color: var(--optionalColor);
+            color: white;
 
             a {
                 position: relative;
                 display: inline-block;
-                color: var(--optionalColor);
+                color: white;
 
                 i {
                     position: absolute;
                     left: 0;
                     top: 1.7px;
-                    color: var(--mainColor);
+                    color: white;
                     font-size: 13px;
                     opacity: 0;
                     visibility: hidden;
@@ -60,12 +62,12 @@
             padding-left: 25px;
             position: relative;
             margin-bottom: 14px;
-            color: var(--optionalColor);
+            color: white;
 
             a {
                 position: relative;
                 display: inline-block;
-                color: var(--optionalColor);
+                color: white;
 
                 &:hover {
                     color: var(--mainColor);
@@ -133,14 +135,14 @@
 
     p {
         line-height: initial;
-        color: #989898;
+        color: white;
 
         span {
-            color: var(--blackColor);
+            color: white;
             font-weight: 600;
         }
         a {
-            color: var(--mainColor);
+            color: white;
             font-weight: 600;
 
             &:hover {
@@ -171,6 +173,7 @@
 
         p {
             line-height: 1.8;
+            color: white;
         }
     }
 
@@ -190,6 +193,7 @@
     .copyright-area {
         margin-top: 25px;
         padding-top: 25px;
+
     }
 
 }

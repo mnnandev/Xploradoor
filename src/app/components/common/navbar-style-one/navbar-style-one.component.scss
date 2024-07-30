@@ -589,7 +589,8 @@
     }
     &.sticky {
         position: fixed;
-        background-color: black !important;
+        background-color: #282a38 !important;
+        border-bottom: 3px solid white;
     }
 }
 .loginRegisterModal {
@@ -706,7 +707,7 @@
                                 a {
                                     display: block;
                                     text-align: center;
-                                    background-color: var(--blackColor);
+                                    background-color: #282a38;
                                     color: var(--whiteColor);
                                     border-radius: 5px;
                                     font-weight: 600;
@@ -792,7 +793,7 @@
                             transition: var(--transition);
 
                             &:hover {
-                                background-color: var(--blackColor);
+                                background-color: #282a38;
                                 color: var(--whiteColor);
                             }
                         }
@@ -842,7 +843,7 @@
                                 a {
                                     display: block;
                                     text-align: center;
-                                    background-color: var(--blackColor);
+                                    background-color: #282a38;
                                     color: var(--whiteColor);
                                     border-radius: 5px;
                                     font-weight: 600;
@@ -928,7 +929,7 @@
                             transition: var(--transition);
 
                             &:hover {
-                                background-color: var(--blackColor);
+                                background-color: #282a38;
                                 color: var(--whiteColor);
                             }
                         }
@@ -976,12 +977,12 @@
         &.navbar-style-two {
             .navbar {
                 .navbar-collapse {
-                    background-color: var(--blackColor);
+                    background-color: #282a38;
                 }
                 .navbar-nav {
                     .nav-item {
                         .dropdown-menu {
-                            background-color: #0e0917;
+                            background-color: #282a38;
     
                             .nav-item {
                                 .nav-link {
@@ -992,7 +993,7 @@
                                     }
                                 }
                                 .dropdown-menu {
-                                    background-color: var(--blackColor);
+                                    background-color: #282a38;
 
                                     .nav-item {
                                         .nav-link {
@@ -1024,7 +1025,7 @@
                 padding: 20px;
                 margin-top: 15px;
                 max-height: 50vh;
-                background-color: #f8f8f8;
+                background-color: #282a38;
                 overflow: {
                     y: scroll;
                     x: hidden;
@@ -1261,7 +1262,7 @@
         &.navbar-style-two {
             .navbar {
                 .navbar-collapse {
-                    background-color: var(--blackColor);
+                    background-color: #282a38;
                 }
                 .navbar-nav {
                     .nav-item {
@@ -1277,7 +1278,7 @@
                                     }
                                 }
                                 .dropdown-menu {
-                                    background-color: var(--blackColor);
+                                    background-color: #282a38;
 
                                     .nav-item {
                                         .nav-link {
@@ -1664,7 +1665,7 @@
                                     }
                                 }
                                 .dropdown-menu {
-                                    background-color: var(--blackColor);
+                                    background-color: #282a38;
 
                                     .nav-item {
                                         .nav-link {
@@ -1718,7 +1719,7 @@
                 .nav-item {
                     margin: {
                         left: 9px;
-                        right: 9px;
+                        right: 0px;
                     };
                 }
             }

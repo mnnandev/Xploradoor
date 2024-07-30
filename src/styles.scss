@@ -1667,14 +1667,15 @@ textarea.form-control {
                 transition: var(--transition);
                 border: 1px solid var(--mainColor);
                 position: absolute;
-                left: 20px;
-                top: 55%;
+                left: -20px;
+                top: 45%;
                 transform: translateY(-55%);
                 box-shadow: -2px 2px var(--mainColor);
 
                 &.owl-next {
                     left: auto;
-                    right: 20px;
+                    right: -22px;
+                    top: 45%;
                     box-shadow: 2px 2px var(--mainColor);
                 }
                 &:hover {
