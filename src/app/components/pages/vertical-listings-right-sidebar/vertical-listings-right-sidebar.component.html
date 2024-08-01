@@ -1,11 +1,12 @@
 <!-- <app-navbar-style-two></app-navbar-style-two> -->
 <div class="post_page">
     <!-- nav-menu -->
+     
     <div class="nav_menu">
         <div class="fix_top">
           <div class="nav">
             <div class="logo">
-              <a href="./home.html">
+              <a routerLink="/">
                 <img class="d-block d-lg-none small-logo" src="../../../../assets/img/logo.png" alt="logo">
                 <img class="d-none d-lg-block" src="../../../../assets/img/logo.png" alt="logo" style="width: 100px; padding-bottom: 10px;">
               </a>
@@ -105,7 +106,7 @@
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <img class="logo" src="../../../../assets/img/logo.png">
                 </button>
-                <ul class="dropdown-menu">
+                <!-- <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">
                     <span>Following</span>
                     <img src="../../../../assets/images/add-friend.png">
@@ -114,7 +115,7 @@
                     <span>Favorites</span>
                     <img src="../../../../assets/images/star.png">
                   </a></li>
-                </ul>
+                </ul> -->
               </div>
               <div class="left">
                 <div class="search_bar">
@@ -138,9 +139,9 @@
           <div class="nav_xm">
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="logo" src="../../../../assets/images/logo_menu.png">
+                <img class="logo" src="../../../../assets/img/logo.png">
               </button>
-              <ul class="dropdown-menu">
+              <!-- <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">
                   <span>Following</span>
                   <img src="../../../../assets/images/add-friend.png">
@@ -149,7 +150,7 @@
                   <span>Favorites</span>
                   <img src="../../../../assets/images/star.png">
                 </a></li>
-              </ul>
+              </ul> -->
             </div>
             <div class="left">
               <img src="../../../../assets/images/send.png">
@@ -320,9 +321,12 @@
             </div>
         </div>
     </div>
-
     <!-- reels -->
-    <div class="reels">
+    <div class="d-flex flex-column" style="overflow: hidden;">
+       <div class="" style="width: 100%; max-width: 800px; margin: 0 170px 0 auto;">
+        <app-category></app-category>
+      </div>
+      <div class="reels">
         <div class="reel">
             <div class="video">
               <video src="../../../../assets/video/video1.mp4" autoplay loop></video>
@@ -535,6 +539,10 @@
           </div>
           
     </div>
+    </div>
+      
+     
+   
  
 
     <!-- comment model -->
