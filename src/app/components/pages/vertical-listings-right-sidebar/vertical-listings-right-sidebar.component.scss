@@ -19,7 +19,7 @@
   }
   
   .loved {
-    display: none;
+    display: block;
   }
   
   .display {
@@ -504,7 +504,7 @@
     z-index: 200;
     position: relative;
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color:  black;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
@@ -529,11 +529,11 @@
     margin-bottom: 5em;
   }
   .nav .menu ul li {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .nav .menu ul li a {
-    color: rgb(38, 38, 38);
-    font-size: 17px;
+     color: white;
+    font-size: 15px;
     display: flex;
     flex-direction: row;
     font-weight: 400;
@@ -1009,6 +1009,13 @@
     justify-content: space-between;
     height: 99%;
     padding: 1em 0.5em;
+    box-shadow: 5px 5px #b2eaea;
+    border: 1px solid #96e3e3;
+    border-radius: 5px;
+  }
+  .reels .reel .video .content:hover {
+    box-shadow: 5px 5px #5ff0f0;
+    cursor: pointer;
   }
   .reels .reel .video .content img {
     width: 24px;
@@ -1024,7 +1031,7 @@
     margin-top: 20px;
   }
   .reels .reel .video .content .sound .volume-mute {
-    display: none;
+    display: block;
   }
   .reels .reel .video .content .play {
     opacity: 0;
@@ -1128,7 +1135,7 @@
     opacity: 0.7;
   }
   .reels .reel .likes div .loved {
-    display: none;
+    display: block;
   }
   .reels .reel .likes div.send, .reels .reel .likes div.save {
     padding-bottom: 18px;
@@ -1476,7 +1483,91 @@
     align-items: center;
     justify-content: center;
   }
-  
+  // story model 
+  #create_modal-story .modal_share {
+    max-width: 700px;
+  }
+  #create_modal-story .modal_complete {
+    max-width: 450px;
+  }
+  #create_modal-story .modal-body {
+    overflow: hidden !important;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #create_modal-story .modal-body img.up_load {
+    width: 90px;
+  }
+  #create_modal-story .modal-body p {
+    padding: 15px 0;
+  }
+  #create_modal-story .modal-body .cart {
+    margin-bottom: 0;
+  }
+  #create_modal-story .modal-body .cart img {
+    width: 30px;
+    height: auto;
+  }
+  #create_modal-story .modal-body .cart p {
+    font-size: 12px;
+  }
+  #create_modal-story .modal-body button.btn_upload {
+    position: relative;
+    font-size: 12px;
+  }
+  #create_modal-story .modal-body button.btn_upload .input_select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    opacity: 0;
+  }
+  #create_modal-story .modal-body #image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #create_modal-story .modal-body #image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  #create_modal-story .modal-body #image_description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  #create_modal-story .modal-body #image_description .img_p img {
+    width: 100%;
+    height: 100%;
+  }
+  #create_modal-story .modal-body #image_description .description {
+    background-color: white;
+    border-left: 2px solid rgb(239, 239, 239);
+    padding: 6px;
+  }
+  #create_modal-story button.next_btn_post, #create_modal-story button.share_btn_post {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 149, 246);
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  #create_modal-story .post_published {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .profile_container {
     padding: 60px 10px 0;
     margin: auto;
@@ -1751,3 +1842,5 @@
   .sign_up .content .download div img {
     height: 40px;
   }/*# sourceMappingURL=main.css.map */
+
+ 
