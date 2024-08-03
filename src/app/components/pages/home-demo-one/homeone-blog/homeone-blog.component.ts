@@ -22,6 +22,14 @@ export class HomeoneBlogComponent implements OnInit {
             link: 'blog-details'
         },
         {
+            mainImg: 'assets/img/blog/blog1.jpg',
+            authorImg: 'assets/img/user1.jpg',
+            authorName: 'Taylor',
+            date: 'Aug 7, 2024',
+            title: '10 Types of Social Proof and What Makes Them Effective',
+            link: 'blog-details'
+        },
+        {
             mainImg: 'assets/img/blog/blog2.jpg',
             authorImg: 'assets/img/user2.jpg',
             authorName: 'Sarah',

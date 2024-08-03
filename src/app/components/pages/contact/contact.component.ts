@@ -57,7 +57,7 @@ export class ContactComponent implements OnInit {
 
     contactImage = [
         {
-            img: 'assets/img/contact.png'
+            img: 'assets/img/contact-1.png'
         }
     ]
 

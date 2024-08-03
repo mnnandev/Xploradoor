@@ -18,6 +18,7 @@ import { HomeoneBlogComponent } from './components/pages/home-demo-one/homeone-b
 import { FeedbackStyleOneComponent } from './components/common/feedback-style-one/feedback-style-one.component';
 import { HomeoneDestinationsComponent } from './components/pages/home-demo-one/homeone-destinations/homeone-destinations.component';
 import { CategoryComponent } from './components/common/category/category.component';
+import { CategorytwoComponent } from './components/common/category-two/category-two.component';
 import { HomeoneListingsComponent } from './components/pages/home-demo-one/homeone-listings/homeone-listings.component';
 import { FeaturesComponent } from './components/common/features/features.component';
 import { HomeoneBannerComponent } from './components/pages/home-demo-one/homeone-banner/homeone-banner.component';
@@ -88,6 +89,7 @@ import { DashboardMyListingsComponent } from './components/pages/dashboard/dashb
         FeedbackStyleOneComponent,
         HomeoneDestinationsComponent,
         CategoryComponent,
+        CategorytwoComponent,
         HomeoneListingsComponent,
         FeaturesComponent,
         HomeoneBannerComponent,
