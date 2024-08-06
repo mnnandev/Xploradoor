@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 @Component({
     selector: 'app-homeone-blog',
@@ -22,6 +24,14 @@ export class HomeoneBlogComponent implements OnInit {
             link: 'blog-details'
         },
         {
+            mainImg: 'assets/img/blog/blog2.jpg',
+            authorImg: 'assets/img/user2.jpg',
+            authorName: 'Sarah',
+            date: 'Aug 6, 2024',
+            title: 'Tech Products That Make It Easier to Stay Home',
+            link: 'blog-details'
+        },
+        {
             mainImg: 'assets/img/blog/blog1.jpg',
             authorImg: 'assets/img/user1.jpg',
             authorName: 'Taylor',
@@ -38,22 +48,33 @@ export class HomeoneBlogComponent implements OnInit {
             link: 'blog-details'
         }
     ]
-    singleEventsItem = [
-        {
-            date: 'Thu, Jul 30, 11:30 am - 10:00 pm',
-            title: 'International Agriculture and Technology Summit',
-            link: 'single-events'
-        },
-        {
-            date: 'Thu, Jul 29, 11:30 am - 10:00 pm',
-            title: 'Digital Marketing: Customer Engagement & Social Media',
-            link: 'single-events'
-        },
-        {
-            date: 'Thu, Jul 28, 11:30 am - 10:00 pm',
-            title: 'Internet of Things Forum Africa Exhibition (IOTFA)',
-            link: 'single-events'
+    
+
+    blogSlides:  OwlOptions = {
+        loop: false,
+        nav: true,
+        dots: true,
+        autoplayHoverPause: true,
+        autoplay: true,
+        margin: 30,
+        navText: [
+            "<i class='flaticon-left-chevron'></i>",
+            "<i class='flaticon-right-chevron'></i>"
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          375: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
         }
-    ]
+      };
 
 }
