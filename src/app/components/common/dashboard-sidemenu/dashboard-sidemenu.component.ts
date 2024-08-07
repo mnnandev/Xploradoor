@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-dashboard-sidemenu',
-    templateUrl: './dashboard-sidemenu.component.html',
-    styleUrls: ['./dashboard-sidemenu.component.scss']
+  selector: 'app-dashboard-sidemenu',
+  templateUrl: './dashboard-sidemenu.component.html',
+  styleUrls: ['./dashboard-sidemenu.component.scss']
 })
 export class DashboardSidemenuComponent implements OnInit {
 
-    constructor() { }
+  classApplied = false;
 
-    ngOnInit(): void {}
+  constructor() { }
 
-    classApplied = false;
-    toggleClass() {
-        this.classApplied = !this.classApplied;
-    }
+  ngOnInit(): void {}
 
+  toggleClass() {
+    this.classApplied = !this.classApplied;
+  }
 }

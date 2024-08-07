@@ -1,5 +1,5 @@
 <!-- Start Sidemenu Area -->
-<div class="sidemenu-area" [class.active]="classApplied">
+<div class="sidemenu-area" [ngClass]="{'active': classApplied}">
     <div class="sidemenu-header">
         <a routerLink="/" class="navbar-brand d-flex align-items-center">
             <img src="../../../../assets/img/logo.png" alt="image" style="height: 53px;">
@@ -85,6 +85,12 @@
                 <a routerLink="/dashboard-add-listings" class="nav-link">
                     <span class="icon"><i class='bx bx-plus-circle'></i></span>
                     <span class="menu-title">Add Listings</span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active mm-active">
+                <a routerLink='/dashboard-add-blog' class="nav-link">
+                    <span class="icon"><i class='bx bx-plus-circle'></i></span>
+                    <span class="menu-title">Add Blog</span>
                 </a>
             </li>
             <!-- <li class="nav-item" routerLinkActive="active mm-active">

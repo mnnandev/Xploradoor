@@ -10,6 +10,7 @@ import { CategoriesComponent } from './components/pages/categories/categories.co
 import { CheckoutComponent } from './components/pages/checkout/checkout.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { DashboardAddBlogComponent } from './components/pages/dashboard/dashboard-add-blog/dashboard-add-blog.component';
 import { DashboardAddListingsComponent } from './components/pages/dashboard/dashboard-add-listings/dashboard-add-listings.component';
 import { DashboardBookingsComponent } from './components/pages/dashboard/dashboard-bookings/dashboard-bookings.component';
 import { DashboardBookmarksComponent } from './components/pages/dashboard/dashboard-bookmarks/dashboard-bookmarks.component';
@@ -77,6 +78,7 @@ const routes: Routes = [
     {path: 'dashboard-invoice', component: DashboardInvoiceComponent},
     {path: 'dashboard-my-profile', component: DashboardMyProfileComponent},
     {path: 'dashboard-add-listings', component: DashboardAddListingsComponent},
+    {path: 'dashboard-add-blog', component: DashboardAddBlogComponent},
     {path: 'dashboard-bookmarks', component: DashboardBookmarksComponent},
     {path: 'dashboard-my-listings', component: DashboardMyListingsComponent},
     // Here add new pages component

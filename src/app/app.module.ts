@@ -75,6 +75,7 @@ import { DashboardReviewsComponent } from './components/pages/dashboard/dashboar
 import { DashboardInvoiceComponent } from './components/pages/dashboard/dashboard-invoice/dashboard-invoice.component';
 import { DashboardMyProfileComponent } from './components/pages/dashboard/dashboard-my-profile/dashboard-my-profile.component';
 import { DashboardAddListingsComponent } from './components/pages/dashboard/dashboard-add-listings/dashboard-add-listings.component';
+import { DashboardAddBlogComponent } from './components/pages/dashboard/dashboard-add-blog/dashboard-add-blog.component';
 import { DashboardBookmarksComponent } from './components/pages/dashboard/dashboard-bookmarks/dashboard-bookmarks.component';
 import { DashboardMyListingsComponent } from './components/pages/dashboard/dashboard-my-listings/dashboard-my-listings.component';
 
@@ -146,6 +147,7 @@ import { DashboardMyListingsComponent } from './components/pages/dashboard/dashb
         DashboardInvoiceComponent,
         DashboardMyProfileComponent,
         DashboardAddListingsComponent,
+        DashboardAddBlogComponent,
         DashboardBookmarksComponent,
         DashboardMyListingsComponent
     ],
