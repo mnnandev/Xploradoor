@@ -87,7 +87,7 @@
                             <i class="bi bi-twitter"></i>
                             <label for="twitter" style="margin-bottom: 0px;padding-left: 0px;">Twitter</label>
                         </div>
-                        <div class="social-media-account" >
+                        <div class="social-media-account" data-bs-toggle="modal" data-bs-target="#message_modal">
                             <input type="checkbox" id="instagram"> 
                             <i class="bi bi-instagram"></i>
                             <label for="instagram" style="margin-bottom: 0px;padding-left: 0px;">Instagram</label>
@@ -98,6 +98,43 @@
                             <label for="youtube" style="margin-bottom: 0px;padding-left: 0px;">Youtube</label>
                         </div>
                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- model -->
+        <div class="modal fade" id="message_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="box-shadow: 5px 5px #16f5f5; border: 1px solid #96e3e3;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Select Images to Delete 
+                            <span *ngIf="images.length > 0"> ({{ selectedImages.size }} selected)</span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="deleteImagesForm">
+                            <div *ngIf="images.length > 0; else noImages">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-4 mb-3" *ngFor="let image of images">
+                                        <div class="image-card">
+                                            <img [src]="image.src" class="card-img-top" alt="{{image.alt}}">
+                                            <input type="checkbox" class="image-checkbox" id="imageCheckbox{{image.id}}" (change)="toggleSelection(image.id)">
+                                            <label for="imageCheckbox{{image.id}}" class="image-label"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ng-template #noImages>
+                                <p>No images are left.</p>
+                            </ng-template>
+                        </form>
+                    </div>
+                    <div class="modal-footer" *ngIf="images.length > 0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" (click)="deleteSelectedImages()">Delete</button>
                     </div>
                 </div>
             </div>
