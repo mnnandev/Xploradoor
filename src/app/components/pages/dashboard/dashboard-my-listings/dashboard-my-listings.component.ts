@@ -426,4 +426,10 @@ export class DashboardMyListingsComponent implements OnInit {
     this.images = this.images.filter(image => !this.selectedImages.has(image.id));
     this.selectedImages.clear();
   }
+
+  items = [
+    { col1: 'Item 1-1', col2: 'Item 1-2', col3: 'Item 1-3' },
+    { col1: 'Item 2-1', col2: 'Item 2-2', col3: 'Item 2-3' },
+    { col1: 'Item 3-1', col2: 'Item 3-2', col3: 'Item 3-3' },
+  ];
 }

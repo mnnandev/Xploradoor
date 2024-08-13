@@ -1,6 +1,7 @@
 <app-dashboard-sidemenu></app-dashboard-sidemenu>
 
 <!-- Start Main Content Wrapper Area -->
+
 <div class="main-content d-flex flex-column">
 
     <app-dashboard-navbar></app-dashboard-navbar>
@@ -118,6 +119,174 @@
     <div class="flex-grow-1"></div>
 
     <!-- <app-copyrights></app-copyrights> -->
+     <div class="bg-white p-3 mb-3" >
+        <div class="row" style="gap: 10px;">
+            <div class="col-lg-3 col-md-4">
+                <div class="form-group">
+                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="form-group">
+                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="form-group">
+                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                    <input type="text" class="form-control" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="buttons ">
+                    
+                    <button class="default-btn-mine">Search</button>
+                    <button class="default-btn-mine">Cancel</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="bg-white" style="overflow: scroll;">
+        <div class="table-container">
+            <div class="table-header">
+                <h3>Basic Informations</h3>
+                
+            </div>
+        
+            <table class="table table-bordered">
+                <thead >
+                    <tr style="background-color: #0ec6c65c;color: rgba(0, 0, 0, 0.619);">
+                        <th style="width: 4%;">SR NO</th>
+                        <th>User Name</th>
+                        <th hidden>ID</th>
+                        <th>Email</th>
+                        <th>Account Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>i1224tssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3" ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3"  ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square"  data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3"  ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square"  data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3"  ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square"  data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3"  ></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square"  data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3" data-bs-toggle="modal" data-bs-target="#message_modal-Confirmation"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>itssalmanidgmail.com</td>
+                        <td>Active</td>
+                        <td class="action-buttons">
+                            <i class="bi bi-person-fill"></i>
+                            <i class="bi bi-pencil-square"  data-bs-toggle="modal" data-bs-target="#edit_modal"></i>
+                            <i class="bi bi-trash3"  ></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <div class="modal fade" id="edit_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="box-shadow: 5px 5px #16f5f5; border: 1px solid #96e3e3;">
+                    <div class="modal-header" style="background: #16f5f5ab;">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                           user Profile
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                                    <input type="text" class="form-control" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                                    <input type="text" class="form-control" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <label><i class='bx bx-briefcase-alt'></i> test1</label>
+                                    <input type="text" class="form-control" placeholder="Enter your email">
+                                </div>
+                            </div>
+                             
+                        </div>
+                    </div>
+                    <div class="modal-footer" *ngIf="images.length > 0">
+                        <button type="button" class="default-btn-mine" data-bs-dismiss="modal" style="box-shadow: 4px 4px #16f5f5;">Close</button>
+                        <button type="button" class="default-btn-mine" style="box-shadow: 4px 4px #16f5f5;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
+
 <!-- End Main Content Wrapper Area -->
