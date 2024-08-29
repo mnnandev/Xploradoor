@@ -24,6 +24,19 @@ export class VerticalListingsRightSidebarComponent implements OnInit, AfterViewI
             isMuted: false
         },
         {
+            videoSrc: '../../../../assets/video/reel.mp4',
+            authorImg: '../../../../assets/images/profile_img.jpg',
+            authorName: 'zineb',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Officiis...',
+            musicName: 'nameOfMusic',
+            location: 'casablanca',
+            liked: false,
+            likesCount: 900,
+            isBookmarked: false,
+            isPlaying: false,
+            isMuted: false
+        },
+        {
             videoSrc: '../../../../assets/video/video1.mp4',
             authorImg: '../../../../assets/images/profile_img.jpg',
             authorName: 'zineb',
